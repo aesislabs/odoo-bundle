@@ -1,10 +1,10 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\Validator\Constraints;
+namespace Aesislabs\Bundle\OdooBundle\Validator\Constraints;
 
-use Ang3\Bundle\OdooBundle\Connection\ClientRegistry;
-use Ang3\Component\Odoo\Expression\CustomDomain;
-use Ang3\Component\Odoo\Expression\DomainInterface;
+use Aesislabs\Bundle\OdooBundle\Connection\ClientRegistry;
+use Aesislabs\Component\Odoo\Expression\CustomDomain;
+use Aesislabs\Component\Odoo\Expression\DomainInterface;
 use InvalidArgumentException;
 use LogicException;
 use RuntimeException;

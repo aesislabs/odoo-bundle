@@ -1,6 +1,6 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\DependencyInjection;
+namespace Aesislabs\Bundle\OdooBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

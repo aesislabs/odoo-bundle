@@ -1,6 +1,6 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\ORM;
+namespace Aesislabs\Bundle\OdooBundle\ORM;
 
 use RuntimeException;
 use Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface;

@@ -1,7 +1,7 @@
 Odoo bundle
 ===========
 
-[![Build Status](https://travis-ci.org/Ang3/odoo-bundle.svg?branch=master)](https://travis-ci.org/Ang3/odoo-bundle) 
+[![Build Status](https://travis-ci.org/Aesislabs/odoo-bundle.svg?branch=master)](https://travis-ci.org/Aesislabs/odoo-bundle) 
 [![Latest Stable Version](https://poser.pugx.org/ang3/odoo-bundle/v/stable)](https://packagist.org/packages/ang3/odoo-bundle) 
 [![Latest Unstable Version](https://poser.pugx.org/ang3/odoo-bundle/v/unstable)](https://packagist.org/packages/ang3/odoo-bundle) 
 [![Total Downloads](https://poser.pugx.org/ang3/odoo-bundle/downloads)](https://packagist.org/packages/ang3/odoo-bundle)
@@ -20,8 +20,8 @@ Documentation of both packages:
 
 | Package | Documentation |
 | --- | --- |
-| ang3/php-odoo-api-client | [https://github.com/Ang3/php-odoo-api-client](https://github.com/Ang3/php-odoo-api-client)
-| ang3/php-odoo-orm | [https://github.com/Ang3/php-odoo-orm](https://github.com/Ang3/php-odoo-orm)
+| ang3/php-odoo-api-client | [https://github.com/Aesislabs/php-odoo-api-client](https://github.com/Aesislabs/php-odoo-api-client)
+| ang3/php-odoo-orm | [https://github.com/Aesislabs/php-odoo-orm](https://github.com/Aesislabs/php-odoo-orm)
 
 Installation
 ============
@@ -103,7 +103,7 @@ If you want to work with all your configured clients, then you may want to get t
 It stores all configured clients by connection name. You can get it by dependency injection:
 
 ```php
-use Ang3\Bundle\OdooBundle\ClientRegistry;
+use Aesislabs\Bundle\OdooBundle\ClientRegistry;
 
 class MyService
 {
@@ -137,10 +137,10 @@ Clients
 It could be useful to get a client directly without working with the registry.
 
 For example, the get the default client by autowiring, use the argument 
-```Ang3\Component\Odoo\Client $client```:
+```Aesislabs\Component\Odoo\Client $client```:
 
 ```php
-use Ang3\Component\Odoo\Client;
+use Aesislabs\Component\Odoo\Client;
 
 class MyService
 {
@@ -154,7 +154,7 @@ class MyService
 ```
 
 If the connection name is ```foo_bar```, then the autowired argument is 
-```Ang3\Component\Odoo\Client $fooBarClient```.
+```Aesislabs\Component\Odoo\Client $fooBarClient```.
 
 - Run the command ```php bin/console debug:autowiring Client``` to get the list of autowired clients.
 
@@ -194,7 +194,7 @@ Get the manager of a connection easily by using dependency injection and autowir
 ```php
 namespace App;
 
-use Ang3\Component\Odoo\ORM\ObjectManager;
+use Aesislabs\Component\Odoo\ORM\ObjectManager;
 
 class MyService
 {
@@ -211,7 +211,7 @@ class MyService
 ```
 
 If the connection name is ```foo_bar```, then the autowired argument is 
-```Ang3\Component\Odoo\ORM\ObjectManager $fooBarObjectManager```.
+```Aesislabs\Component\Odoo\ORM\ObjectManager $fooBarObjectManager```.
 By default, the default manager is autowired.
 
 - Run the command ```php bin/console debug:autowiring ObjectManager``` to get the list of autowired managers.
@@ -230,7 +230,7 @@ For each manager, the bundle creates a public alias following this naming conven
 ```ang3_odoo.orm.object_manager.<connection_name>```.
 
 Please read the documentation of the ORM package 
-[ang3/php-odoo-orm](https://github.com/Ang3/php-odoo-orm) 
+[ang3/php-odoo-orm](https://github.com/Aesislabs/php-odoo-orm) 
 to know more information about the object manager.
 
 Validator
@@ -243,7 +243,7 @@ to validate a record by ID, domains and/or connection. It resides to a basic ann
 Here is an example of an object storing the ID of a company and invoice:
 
 ```php
-use Ang3\Bundle\OdooBundle\Validator\Constraints as Odoo;
+use Aesislabs\Bundle\OdooBundle\Validator\Constraints as Odoo;
 
 class MyEntity
 {

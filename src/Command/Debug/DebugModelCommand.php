@@ -1,8 +1,8 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\Command\Debug;
+namespace Aesislabs\Bundle\OdooBundle\Command\Debug;
 
-use Ang3\Bundle\OdooBundle\Connection\ClientRegistry;
+use Aesislabs\Bundle\OdooBundle\Connection\ClientRegistry;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

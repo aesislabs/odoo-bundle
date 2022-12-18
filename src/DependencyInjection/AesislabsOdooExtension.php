@@ -1,12 +1,12 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\DependencyInjection;
+namespace Aesislabs\Bundle\OdooBundle\DependencyInjection;
 
-use Ang3\Bundle\OdooBundle\Connection\ClientRegistry;
-use Ang3\Bundle\OdooBundle\ORM\ObjectManagerRegistry;
-use Ang3\Component\Odoo\Client;
-use Ang3\Component\Odoo\ORM\Configuration as OrmConfiguration;
-use Ang3\Component\Odoo\ORM\ObjectManager;
+use Aesislabs\Bundle\OdooBundle\Connection\ClientRegistry;
+use Aesislabs\Bundle\OdooBundle\ORM\ObjectManagerRegistry;
+use Aesislabs\Component\Odoo\Client;
+use Aesislabs\Component\Odoo\ORM\Configuration as OrmConfiguration;
+use Aesislabs\Component\Odoo\ORM\ObjectManager;
 use Doctrine\Common\Annotations\Reader;
 use Exception;
 use Symfony\Component\Config\FileLocator;
@@ -20,7 +20,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * @author Joanis ROUANET
  */
-class Ang3OdooExtension extends Extension
+class AesislabsOdooExtension extends Extension
 {
     /**
      * {@inheritdoc}

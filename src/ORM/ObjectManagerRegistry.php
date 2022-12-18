@@ -1,8 +1,8 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\ORM;
+namespace Aesislabs\Bundle\OdooBundle\ORM;
 
-use Ang3\Component\Odoo\ORM\ObjectManager;
+use Aesislabs\Component\Odoo\ORM\ObjectManager;
 use RuntimeException;
 
 class ObjectManagerRegistry

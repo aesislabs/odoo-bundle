@@ -1,8 +1,8 @@
 <?php
 
-namespace Ang3\Bundle\OdooBundle\Validator\Constraints;
+namespace Aesislabs\Bundle\OdooBundle\Validator\Constraints;
 
-use Ang3\Component\Odoo\Expression\DomainInterface;
+use Aesislabs\Component\Odoo\Expression\DomainInterface;
 use Symfony\Component\Validator\Constraint;
 
 /**
