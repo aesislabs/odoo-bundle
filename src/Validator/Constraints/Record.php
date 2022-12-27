@@ -12,9 +12,8 @@ class Record extends Constraint
 {
     /**
      * @var string
-     *
-     * @required
      */
+    #[\Symfony\Contracts\Service\Attribute\Required]
     public $model;
 
     /**
